@@ -63,7 +63,7 @@
             background-image: radial-gradient(whitesmoke, rgb(0, 255, 0))
         }
         nav {
-            display: none;
+            display: flex;
         }
         }
 
@@ -107,7 +107,16 @@
 <body>
     <header>
         <h1>Media Queries</h1>
-        <nav><h2>week2 task3 ¯\(ツ)/¯</h2></nav>
+        <h2>week2 task3 ¯\(ツ)/¯</h2>
+        <nav>
+            <p id="hiddenText" style="display: none;">hold and press ctrl+shift+i</p>
+
+            <button id="revealBtn" onclick="document.getElementById('hiddenText').style.display = 'block'; this.style.display = 'none';">
+                week 2 task 3
+            </button>
+        </nav>
+
+
     </header>
 
     <main>
