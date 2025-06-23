@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+        font: 1.5rem "Courier New", monospace;
+        min-height: 100vh;
+
+        background-color: #475569;
+        background-image: radial-gradient(circle at center, rgb(0, 225, 255), white );
+        display: flex;
+        flex-direction: column;
+        }
+
+        header, nav, main, footer {
+        display: grid;
+        place-content: center;
+        grid-template-columns: 100%;
+        text-align: center;
+        }
+
+        header, footer {
+        position: sticky;
+        background-color: #323232;
+        color: whitesmoke;
+        }
+
+        header {
+        top: 0;
+        }
+
+        nav {
+        background-color: #fff;
+        color: #000;
+        padding: 0.5rem;
+        border-bottom: 2px solid #000;
+        }
+
+        main {
+        flex-grow: 1;
+        }
+
+        footer { 
+        bottom: 0;
+        }
+
+        @media screen and (min-width: 576px) {
+        body {
+            background-color: rgb(2, 255, 2);
+            background-image: radial-gradient(whitesmoke, rgb(0, 255, 0))
+        }
+        nav {
+            display: none;
+        }
+        }
+
+        @media screen and (min-width: 768px) {
+        body {
+            background-color: gold;
+            background-image: radial-gradient(whitesmoke, gold)
+        }
+        }
+
+        @media screen and (min-width: 992px) {
+        body {
+            background-color: firebrick;
+            background-image: radial-gradient(whitesmoke, firebrick)
+        }
+        }
+
+        @media screen and (min-width: 1200px) {
+        body {
+            background-color: rgb(128, 0, 255);
+            background-image: radial-gradient(whitesmoke, rgb(128, 0, 255))
+        }
+        }
+
+        @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+        body {
+            background-color: rgb(251, 255, 0);
+            background-image: radial-gradient(whitesmoke, rgb(251, 255, 0))
+        }
+
+        h1, h2 {
+            font-size: 1.5rem;
+        }
+
+        nav { display: none }
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Media Queries</h1>
+        <nav><h2>week2 task3 ¯\(ツ)/¯</h2></nav>
+    </header>
+
+    <main>
+        <h2>Using html and css</h2>
+    </main>
+
+    <footer>
+        <h2>Page 1</h2>
+    </footer>
+</body>
+
+</html>
