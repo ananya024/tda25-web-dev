@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://…/browser@4?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Tailwind</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 6;
+            box-sizing: border-box;
+            }
+
+            body {
+            font: 1.5rem "Courier New", monospace;
+            min-height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            }
+
+         nav {
+            display: grid;
+            place-content: center;
+            background-color: #fff;
+            color: #000;
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+            }
+    </style>
+</head>
+<body class="p-6 bg-gray-100">
+    <h1 class="text-3xl font-bold text-blue-600">Hello! Tailwind v4!</h1>
+    <p class="mt-4 text-gray-700">You're using Tailwind with just HTML!</p>
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img src="tailwind.png" alt="Display" class="w-full" />
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Tailwind</div>
+            <p class="text-gray-700 text-base">Tailwind css html.</p>
+            <p class="text-gray-700 text-base">Using vs code.</p>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#week2task4</span>
+        </div>
+    </div>
+<button class="bg-gray-500 hover:bg-black-700 text-white font-bold py-2 px-4 rounded">Dark mode</button>
+</body>
+<body class="dark">
+    <nav>
+        <p id="hiddenText" style="display: none;" class="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+            the background here is dark now
+        </p>
+        <button id="revealBtn" onclick="document.getElementById('hiddenText').style.display = 'block'; this.style.display = 'none';">
+            Click to enable dark mode
+        </button>
+    </nav>
+</body>
+</html>
