@@ -1,4 +1,4 @@
-const taskInput = document.getElementById("taskInput");
+const taskInput = document.getElementById("taskInput"); //const bcoz var reference cant change, but the value of var ref, ie what is in the textbox, can change
 const addBtn = document.getElementById("addBtn");
 const taskList = document.getElementById("taskList");
 
