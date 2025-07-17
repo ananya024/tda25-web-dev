@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    color:white;
+    font-family: Arial, sans-serif;
+}
+
+.red-font{
+    color: #e54b09;
+    font-size: 100px;
+}
+
+.red-font-small{
+    font-size: 50px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #e54b09;
+}
+
+nav {
+background-color: #277372;
+padding: 1rem;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+gap: 1rem;
+}
+
+nav a {
+color: #e54b09;
+text-decoration: none;
+font-weight: bold;
+}
+
+.logo-title {
+  display: flex;
+  font-size: 30px;
+  align-items: center; /* aligns image and text vertically */
+  gap: 10px; /* spacing between logo and text */
+}
+
+.card{
+  border: 1px solid hsl(0,0%,80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5pxhsla(0,0%,0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+  display: inline-block;
+}
+
+.card .card-image{
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card .card-title{
+  font-family: Arial, sans-serif;
+  margin:0;
+  color: hsl(0, 0%, 20%);
+}
+
+.card .card-text{
+  font-family: Arial, sans-serif;
+  color: hsl(0, 0%, 30%);
+}
+
+.tda{
+  width: 80px;
+  margin-right: 0; 
+  margin-left: auto;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between; /* or center, flex-start */
+  gap: 20px; /* space between images */
+  align-items: flex-start;
+}
+
+.image-row img {
+    /* or any fixed/responsive size */
+  height: auto;
+}
+
+
+.card-row {
+  display: flex;
+  align-items: flex-start; 
+  gap: 20px;   
+  height: auto; 
+}
